@@ -1,9 +1,9 @@
 #include "morse.h"
-#include <include.h>
+#include <stdio.h>
 
 #define MORSECHAR_SIZE 5
 
-void convert(char *textInput)
+void convert(char textinput[])
 {
   int inputchar, i;
   char morsechar[MORSECHAR_SIZE];
@@ -49,7 +49,47 @@ void convert(char *textInput)
       morsechar[i] = Qm;
     case 'r': case 'R':
       morsechar[i] = Rm;
-      case 
-    }
+    case 's': case 'S':
+      morsechar[i] = Sm;
+    case 't': case 'T':
+      morsechar[i] = Tm;
+    case 'u': case 'U':
+      morsechar[i] = Um;
+    case 'v': case 'V':
+      morsechar[i] = Vm;
+    case 'w': case 'W':
+      morsechar[i] = Wm;
+    case 'x': case 'X':
+      morsechar[i] = Xm;
+    case 'y': case 'Y':
+      morsechar[i] = Ym;
+    case 'z': case 'Z':
+      morsechar[i] = Zm;
+    case '1': 
+      morsechar[i] = ONEm;
+    case '2':
+      morsechar[i] = TWOm;
+    case '3':
+      morsechar[i] = THEm;
+    case '4':
+      morsechar[i] = FOUm;
+    case '5':
+      morsechar[i] = FIVm;
+    case '6':
+      morsechar[i] = SIXm;
+    case '7':
+      morsechar[i] = SEVm;
+    case '8':
+      morsechar[i] = EIGm;
+    case '9':
+      morsechar[i] = NINm;
+    case '0':
+      morsechar[i] = ZERm;
+    case ' ':
+      morsechar[i] = DBLANKm;
+    } /* end of switch */
+
+    popmorsecode(morsechar[i]);
+    i++;
   }
 }
