@@ -1,0 +1,21 @@
+INPUT FORMAT:	regular text
+OUTPUT FORMAT: morse code
+
+sample:
+input: hello
+output: .... . .-.. .-.. ---
+
+************************************************
+
+RUN-TIME OPERATIONS:
+
+1. take next char with getchar
+2. examine which char with switch and load equality morse code to buffer.
+3. print the buffer that contains morse codes.
+4. exit from the program.
+
+RULES:
+ * between every morse code that equal a char have a blank.
+ * after converting a word to morse code put two blanks.
+ * don't convert punctuation marks. Just ignore them.
+ * o
