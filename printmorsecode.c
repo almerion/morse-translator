@@ -1,5 +1,8 @@
 #include "morse.h"
-#include "stdio.h"
+#include <stdio.h>
+
+int bufposition;
+char buf[BUFFER_SIZE];
 
 int printmorsecode(void)
 {

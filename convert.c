@@ -3,93 +3,95 @@
 
 #define MORSECHAR_SIZE 5
 
-void convert(char textinput[])
+int convert(char text[])
 {
-  int inputchar, i;
-  char morsechar[MORSECHAR_SIZE];
 
+  int inputchar, i;
+  char *morsechar;
   i = 0;
 
-  while ((inputchar = getchar) != EOF) {
+  while ((inputchar = text[i++]) != EOF) {
 
     switch (inputchar) {
-    case 'a': case: 'A':
-      morsechar[i] = Am;
+    case 'a': case 'A':
+      morsechar = Am;
     case 'b': case 'B':
-      morsechar[i] = Bm;
+      morsechar = Bm;
     case 'c': case 'C':
-      morsechar[i] = Cm;
+      morsechar = Cm;
     case 'd': case 'D':
-      morsechar[i] = Dm;
+      morsechar = Dm;
     case 'e': case 'E':
-      morsechar[i] = Em;
+      morsechar = Em;
     case 'f': case 'F':
-      morsechar[i] = Fm;
+      morsechar = Fm;
     case 'g': case 'G':
-      morsechar[i] = Gm;
+      morsechar = Gm;
     case 'h': case 'H':
-      morsechar[i] = Hm;
+      morsechar = Hm;
     case 'i': case 'I':
-      morsechar[i] = Im;
+      morsechar = Im;
     case 'j': case 'J':
-      morsechar[i] = Jm;
+      morsechar = Jm;
     case 'k': case 'K':
-      morsechar[i] = Km;
+      morsechar = Km;
     case 'l': case 'L':
-      morsechar[i] = Lm;
+      morsechar = Lm;
     case 'm': case 'M':
-      morsechar[i] = Mm;
+      morsechar = Mm;
     case 'n': case 'N':
-      morsechar[i] = Nm;
+      morsechar = Nm;
     case 'o': case 'O':
-      morsechar[i] = Om;
+      morsechar = Om;
     case 'p': case 'P':
-      morsechar[i] = Pm;
+      morsechar = Pm;
     case 'q': case 'Q':
-      morsechar[i] = Qm;
+      morsechar = Qm;
     case 'r': case 'R':
-      morsechar[i] = Rm;
+      morsechar = Rm;
     case 's': case 'S':
-      morsechar[i] = Sm;
+      morsechar = Sm;
     case 't': case 'T':
-      morsechar[i] = Tm;
+      morsechar = Tm;
     case 'u': case 'U':
-      morsechar[i] = Um;
+      morsechar = Um;
     case 'v': case 'V':
-      morsechar[i] = Vm;
+      morsechar = Vm;
     case 'w': case 'W':
-      morsechar[i] = Wm;
+      morsechar = Wm;
     case 'x': case 'X':
-      morsechar[i] = Xm;
+      morsechar = Xm;
     case 'y': case 'Y':
-      morsechar[i] = Ym;
+      morsechar = Ym;
     case 'z': case 'Z':
-      morsechar[i] = Zm;
+      morsechar = Zm;
     case '1': 
-      morsechar[i] = ONEm;
+      morsechar = ONEm;
     case '2':
-      morsechar[i] = TWOm;
+      morsechar = TWOm;
     case '3':
-      morsechar[i] = THEm;
+      morsechar = THEm;
     case '4':
-      morsechar[i] = FOUm;
+      morsechar = FOUm;
     case '5':
-      morsechar[i] = FIVm;
+      morsechar = FIVm;
     case '6':
-      morsechar[i] = SIXm;
+      morsechar = SIXm;
     case '7':
-      morsechar[i] = SEVm;
+      morsechar = SEVm;
     case '8':
-      morsechar[i] = EIGm;
+      morsechar = EIGm;
     case '9':
-      morsechar[i] = NINm;
+      morsechar = NINm;
     case '0':
-      morsechar[i] = ZERm;
+      morsechar = ZERm;
     case ' ':
-      morsechar[i] = DBLANKm;
+      morsechar = DBLANKm;
+    default:
+      ;
     } /* end of switch */
 
-    popmorsecode(morsechar[i]);
-    i++;
+    popmorsecode(morsechar);
   }
+  return 0;
 }

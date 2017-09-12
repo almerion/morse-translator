@@ -2,7 +2,7 @@
 #define Bm "-..."
 #define Cm "-.-."
 #define Dm "-.."
-#define Em '.'
+#define Em "."
 #define Fm "..-."
 #define Gm "--."
 #define Hm "...."
@@ -17,7 +17,7 @@
 #define Qm "--.-"
 #define Rm ".-."
 #define Sm "..."
-#define Tm '-'
+#define Tm "-"
 #define Um "..-"
 #define Vm "...-"
 #define Wm ".--" 
@@ -38,9 +38,8 @@
 
 #define BUFFER_SIZE 10000
 
-void convert(char textinput[]);
 int popmorsecode(char s[]);
 int printmorsecode(void);
 
-extern int bufposition = 0;
+extern int bufposition;
 extern char buf[BUFFER_SIZE]; 
