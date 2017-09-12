@@ -38,6 +38,7 @@
 
 #define BUFFER_SIZE 10000
 
+int convert(char s[]);
 int popmorsecode(char s[]);
 int printmorsecode(void);
 
