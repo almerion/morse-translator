@@ -1,3 +1,14 @@
+/*-------------------------------------------*
+ * Author          : heari                   *
+ * Created Date    : 9/9/17                  *
+ * Last Update     : 13/9/17                 *
+ * Description     : Contains morse codes    *
+ *  macros and definitions of related        *
+ *  functions about program.                 *
+ *-------------------------------------------*
+*/
+
+
 #define Am ".-"
 #define Bm "-..."
 #define Cm "-.-."
