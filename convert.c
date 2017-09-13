@@ -21,7 +21,17 @@ int convert(char text[])
   char *morsechar;
   i = 0;
 
+  /*                                                      *
+   * Creates a loop to take the next char until reach the *
+   * EOF.
+   */
+
   while ((inputchar = text[i++]) != EOF) {
+
+   /* 
+    * Finds equality of a char in morse code and assign them
+    * to morsechar pointer to pop to the buffer.
+    */ 
 
     switch (inputchar) {
     case 'a': case 'A':
