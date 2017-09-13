@@ -1,3 +1,14 @@
+/*-----------------------------------------*
+ * Author       : heari                    *
+ * Created Date : 9/9/17                   *
+ * Last Update  : 13/9/17                  *
+ * Description  : Converts regular chars   *
+ *  to their morse code equality and pops  *
+ *  them to buffer.                        *
+ *-----------------------------------------*
+ */
+
+
 #include "morse.h"
 #include <stdio.h>
 
