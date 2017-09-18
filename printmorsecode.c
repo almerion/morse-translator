@@ -8,6 +8,7 @@
  *------------------------------------------*
  */
 
+#include <stdlib.h>
 #include "morse.h"
 #include <stdio.h>
 

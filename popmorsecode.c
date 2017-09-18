@@ -8,15 +8,17 @@
  *------------------------------------------*
  */
 
-
+#include <stdlib.h>
 #include <stdio.h>
 #include "morse.h"
 
-int bufposition;
+int bufposition = 0;
 char buf[BUFFER_SIZE];
 
 int popmorsecode(char s[])
 {
+  buf[BUFFER_SIZE] = malloc(BUFFER_SIZE);
+
   int i = 0;
   while (s != NULL)
     s[i++] = buf[bufposition++];
