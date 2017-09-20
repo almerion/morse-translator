@@ -1,7 +1,7 @@
 /*-------------------------------------------*
  * Author          : heari                   *
- * Created Date    : 9/9/17                  *
- * Last Update     : 13/9/17                 *
+ * Created Date    : 09/09/17                *
+ * Last Update     : 13/09/17                *
  * Description     : Contains morse codes    *
  *  macros and definitions of related        *
  *  functions about program.                 *
@@ -49,8 +49,8 @@
 
 #define BUFFER_SIZE 10000
 
-int convert(char s[]);
-int popmorsecode(char s[]);
+int convert(char *s);
+int popmorsecode(char *s);
 int printmorsecode(void);
 
 extern int bufposition;

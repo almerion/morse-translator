@@ -1,7 +1,7 @@
 /*-----------------------------------------*
  * Author       : heari                    *
- * Created Date : 9/9/17                   *
- * Last Update  : 13/9/17                  *
+ * Created Date : 09/09/17                 *
+ * Last Update  : 20/09/17                 *
  * Description  : Converts regular chars   *
  *  to their morse code equality and pops  *
  *  them to buffer.                        *
@@ -25,7 +25,8 @@ int convert(char text[])
    * Creates a loop to take the next char until reach the *
    * EOF.
    */
-
+  /* inputchar can't load the char it shows 0.
+   * This creates a loop. i goes to infinite.*/
   while ((inputchar = text[i++]) != EOF) {
 
    /* 
@@ -113,6 +114,7 @@ int convert(char text[])
     } /* end of switch */
 
     popmorsecode(morsechar);
+
   }
   return 0;
 }

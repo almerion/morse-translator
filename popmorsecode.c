@@ -1,7 +1,7 @@
 /*------------------------------------------*
  * Author         : heari                   *
- * Created Date   : 9/9/17                  *
- * Last Update    : 13/9/17                 *
+ * Created Date   : 09/09/17                *
+ * Last Update    : 20/09/17                *
  * Description    : The function pops the   *
  *  morse codes to the buffer that is using *
  *  for printing.                           *
@@ -15,12 +15,18 @@
 int bufposition = 0;
 char buf[BUFFER_SIZE];
 
-int popmorsecode(char s[])
+int popmorsecode(char *s)
 {
-  buf[BUFFER_SIZE] = malloc(BUFFER_SIZE);
+  malloc(BUFFER_SIZE);
+
+  char *bufp = buf;  /* pointer for buf */
+  char *arr = s;  /* pointer to the morse code*/
 
   int i = 0;
-  while (s != NULL)
-    s[i++] = buf[bufposition++];
+  while (s != NULL) {
+    arr = bufp; 
+    arr++;
+    bufp++;
+  }
   return 0;
 }
